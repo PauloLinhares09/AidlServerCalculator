@@ -3,11 +3,13 @@ package br.com.packapps.aidlservercalculator;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
+import android.os.Parcelable;
 import android.os.RemoteException;
 
 public class MyServiceAidl extends Service {
 
     MyIBind myIBind = new MyIBind();
+    Parcelable parcelable;
 
     public MyServiceAidl() {
     }
